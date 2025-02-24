@@ -42,5 +42,5 @@ Thumbs.db
 # HTMX-related cache
 public/cache/
 public/tmp/
-public/css/
-public/js/
+src/public/css
+src/public/js
