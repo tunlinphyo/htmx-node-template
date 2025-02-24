@@ -1,0 +1,7 @@
+@import url(./utils/utils.css);
+
+button {
+    background-color: hotpink;
+    color: white;
+    padding: 1rem;
+}

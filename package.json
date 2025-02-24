@@ -1,0 +1,40 @@
+{
+  "name": "htmx-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setupFolders.js",
+    "build": "tsc && cp -r src/public dist/public && rm -rf dist/public/assets && cp -r src/views dist/views",
+    "start": "node dist/app.js",
+    "watch:ts": "esbuild src/assets/js/*.ts --bundle --outdir=src/public/js --watch",
+    "watch:css": "postcss src/assets/css/*.css --dir src/public/css --watch",
+    "watch": "npm-run-all --parallel watch:ts watch:css",
+    "dev:server": "nodemon --watch src --exec ts-node src/app.ts",
+    "dev": "npm run setup && npm-run-all --parallel dev:server watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "htmx": "^0.0.2",
+    "htmx.org": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "chokidar": "^4.0.3",
+    "esbuild": "^0.25.0",
+    "nodemon": "^3.1.9",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

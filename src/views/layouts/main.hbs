@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  {{#each cssPath as |css|}}
+    <link rel="stylesheet" href="{{css}}">
+  {{/each}}
+</head>
+<body>
+  {{{body}}}
+  <script src="{{scriptPath}}" defer></script>
+</body>
+</html>

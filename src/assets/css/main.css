@@ -1,0 +1,12 @@
+
+@layer reset, theme, utils, component, overwrite;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@import url(./utils/utils.css) layer(utils);
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
