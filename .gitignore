@@ -11,6 +11,8 @@ build/
 *.js
 *.js.map
 *.d.ts
+!postcss.config.js
+!setupFolders.js
 
 # Environment variables
 .env
@@ -40,3 +42,5 @@ Thumbs.db
 # HTMX-related cache
 public/cache/
 public/tmp/
+public/css/
+public/js/
