@@ -1,4 +1,8 @@
 import 'htmx.org'
 import { Utils } from "./utils"
+import { HtmxHelpers } from './htmx'
 
-Utils.log("TEST")
+document.addEventListener('DOMContentLoaded', () => {
+    new HtmxHelpers()
+    Utils.log("TEST")
+})

@@ -12,7 +12,7 @@ build/
 *.js.map
 *.d.ts
 !postcss.config.js
-!setupFolders.js
+!watchFiles.js
 
 # Environment variables
 .env
