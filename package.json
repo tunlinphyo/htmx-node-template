@@ -1,7 +1,10 @@
 {
-  "name": "htmx-node",
+  "name": "create-htmx-node",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "create-htmx-node": "bin/create-htmx-node.js"
+  },
   "scripts": {
     "build": "rm -rf dist && tsc && cp -r src/public dist/public && cp -r src/views dist/views",
     "start": "node dist/app.js",

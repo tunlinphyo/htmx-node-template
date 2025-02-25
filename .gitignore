@@ -13,6 +13,7 @@ build/
 *.d.ts
 !postcss.config.js
 !watchFiles.js
+!bin/create-htmx-node.js
 
 # Environment variables
 .env
